@@ -2,8 +2,11 @@
 members = [
     "main",
     "config",
+    "common/misc",
+    "common/models",
     "components/mqtt-server",
-    "common/misc"
+    "components/warehouse",
+    "components/protos",
 ]
 
 default-members = ["main"]
