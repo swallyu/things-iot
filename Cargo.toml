@@ -1,0 +1,19 @@
+[workspace]
+members = [
+    "main",
+    "config",
+    "components/mqtt-server",
+    "common/misc"
+]
+
+default-members = ["main"]
+
+[workspace.dependencies]
+tokio = "1.21.2"
+once_cell = "1.15.0"
+ctrlc = "3.2.3"
+libc = { version = "0.2.135", features = ["extra_traits","const-extern-fn"] }
+serde = {version="1.0.144",features=["derive"]}
+serde_json = "1.0.86"
+toml = "0.5.9"
+async-trait = "0.1.59"
